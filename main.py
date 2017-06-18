@@ -3,7 +3,7 @@ from telebot import types
 import requests
 import simplejson as json
 
-TOKEN = 'YOUR_BOT_TOKEN'
+TOKEN = '303984516:AAHyv_K96dgXNwBqrZ_S0RyXQEyCRFog6g8'
 API_PATH = 'http://api.vajehyab.com/v2/public'
 
 bot = telebot.TeleBot(TOKEN)
@@ -27,7 +27,7 @@ def help_command_handler(msg):
 استفاده از این ربات بسیار ساده است.
 کافی است کلمه مورد نظر خود را در پیام خصوصی برای ربات ارسال نمایید تا معنای آن را دریافت کنید.
 همچنین، برای استفاده اینلاین از ربات، کافی است پس از ارسال دستور /start در پیام شخصی ربات، برای گیرنده مورد نظر خود پیام زیر را نوشته و معنای آن را انتخاب نمایید تا ارسال شود.
-@IranBot کلمه
+ کلمه
 '''
     if msg.chat.type == 'private':
         bot.send_message(msg.chat.id, help_msg)
